@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="script.js"></script>
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="calculator">
+    <div class="calculator-inputs">
+      <input class="calculator-input border-dashed-red text-red" id="number1"  type="number" placeholder="0"/>
+      <select class="border-dashed-red text-red" id="operation-selector">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+        <option>%</option>
+        <option>^</option>
+      </select>
+      <input class="calculator-input border-dashed-red text-red" id="number2" type="number" placeholder="0"/>
+    </div>
+    <button class="calculate-button border-dashed-red text-red" onclick="calculate()">Подсчитать</button>
+    <div class="calculator-results border-dashed-red">
+      <div class="result-history" id="history"></div>
+      <div class="text-red" id="value"></div>
+    </div>
+  </div>
+</body>
+</html>
